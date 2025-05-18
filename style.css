@@ -11,10 +11,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body{
+    
+    width: 100%;
+    height: 100%;
     font-family: "Bai Jamjuree", sans-serif;
     background: url(./images/bg-header-desktop.png) no-repeat top center;
     background-size:contain;
@@ -63,9 +65,11 @@ aside > h2{
     
 }
  .ios{
+    box-shadow: 0 1px 2px 1px hsl(170, 68%, 27%);
     background-color: var(--green-500);
 }
 .mac{
+    box-shadow: 0 1px 2px 1px hsl(233, 55%, 43%);
     background-color: var(--blue-100);
 }
 .btn:hover{
@@ -147,17 +151,63 @@ figure .images{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    max-width:88% ;
     gap: 4rem;
-    margin: 1rem 0 3rem;
+    margin: 1rem auto 3rem;
 }
 figure .images > img{
     width: 150px;
-    
 }
 
+/* figure > :not(.images) {
+    text-align: center;
+} */
 
+figure {
+    text-align: center;
+}
+figure h2{
+    font-size: 2rem;
+    margin: 1.5rem 0 1rem;
+}
+figure p{
+    margin: 0 auto 2.6rem;
+    line-height: 1.5;
+    max-width: 750px;
+}
+footer{
+    display: flex;
+    height: 150px;
+    width: 100vw;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(190, 10%, 88%);;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+}
+footer .link{
+    display: flex;
+    max-width: 472px;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+    flex-direction: row;
+    align-items: flex-start;
+}
+footer a{
+    text-decoration: none;
+    color: var(--gray-700);
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
 
-
+.social-network img{
+    width: 30px;
+    height: 30px;
+    margin-right: 1.5rem;
+}
 
 
 
